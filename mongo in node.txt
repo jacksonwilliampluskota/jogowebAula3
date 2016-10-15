@@ -1,0 +1,37 @@
+var MongoClient = require('mongodb').MongoClient;
+var db = null;
+
+app.get('/jogos', function (req, res) {
+	db.collection("jogos")
+		.find()
+		.toArray(function (erro, jogos) ){
+			if (!erro)
+				res.render("jogos", {"listaJogos" : jogos});
+			else
+				res.status(500);
+		});
+});
+
+
+
+
+
+
+// =================================================== OTHER FILE ?
+
+
+
+
+
+
+MongoClient.connect('mongodb://127.0.0.1/loja', function (erro, instancia) {
+	if (erro)
+		console.log("Erro ao estabelecer uma conexão com o bd: " + erro);
+	else{
+		db.instancia;
+		http.createServer(app)
+			.listen(3000, function() {
+				console.log('Servidor está no ar');
+			});
+	}
+});

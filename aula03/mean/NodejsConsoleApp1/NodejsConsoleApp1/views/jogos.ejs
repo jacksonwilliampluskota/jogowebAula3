@@ -1,0 +1,17 @@
+﻿<% layout('principal') %>
+<section>
+	<h1> Lançamentos: </h1>
+	<ul>
+		<h4>lista for</h4>
+		<% for(var i=0; i<listaJogos.length; i++) {%>
+		   <li><%= listaJogos[i].nome %></li>
+		<% } %>
+		</br>
+
+		<h4>list forEach</h4>
+		<% listaJogos.forEach(function(item, i) {	%>
+		<li><%=item.nome%></li>
+		<% }); %>
+	</ul>
+	<a class="btn btn-default" href="/novo">NOVO</a>
+</section>

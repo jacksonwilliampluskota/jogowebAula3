@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>express</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style> 
+</head>
+<body>
+    <!--<h1>Bem-vindo ao <%=nome%></h1>-->
+    <h3>hello pessoa</h3>
+    <canvas id="gameCanvas"
+            height="600"
+            width="800"></canvas>
+    <script>
+    window.onload = function () {
+        var canvas = document.getElementById('gameCanvas');
+        var contexto = canvas.getContext('2d');
+
+        contexto.fillStyle = 'red';
+        contexto.fillRect(100, 100, 100, 100);
+    }
+    </script>
+</body>
+</html>

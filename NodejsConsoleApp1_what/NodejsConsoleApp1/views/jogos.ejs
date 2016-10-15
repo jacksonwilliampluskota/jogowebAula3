@@ -1,0 +1,9 @@
+﻿<% layout('principal') %>
+<section>
+    <h1>Lançamentos:</h1>
+    <ul>
+        <% listaJogos.forEach(function(item, i) { %>
+        <li><%=item.nome%></li>
+        <% }); %>
+    </ul>
+</section>

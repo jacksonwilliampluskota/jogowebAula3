@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodejsConsoleApp1</Name>
+    <RootNamespace>NodejsConsoleApp1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b4cc8984-2230-40c9-9538-1a5a5354dfcf</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\pegamoeda\js\index.js" />
+    <Compile Include="public\pegamoeda\js\phaser.min.js" />
+    <Compile Include="public\phaser03\js\index.js" />
+    <Compile Include="public\phaser03\js\phaser.min.js" />
+    <Content Include="img\logo_valve_footer.png" />
+    <Content Include="package.json" />
+    <Content Include="public\index.html" />
+    <Content Include="public\pegamoeda\assets\background.png" />
+    <Content Include="public\pegamoeda\assets\coin.mp3" />
+    <Content Include="public\pegamoeda\assets\coin.png" />
+    <Content Include="public\pegamoeda\assets\dead.mp3" />
+    <Content Include="public\pegamoeda\assets\enemy.png" />
+    <Content Include="public\pegamoeda\assets\jump.mp3" />
+    <Content Include="public\pegamoeda\assets\player.png" />
+    <Content Include="public\pegamoeda\assets\player2.png" />
+    <Content Include="public\pegamoeda\assets\progressBar.png" />
+    <Content Include="public\pegamoeda\assets\wallHorizontal.png" />
+    <Content Include="public\pegamoeda\assets\wallVertical.png" />
+    <Content Include="public\pegamoeda\index.html" />
+    <Content Include="public\phaser03\assets\background.png" />
+    <Content Include="public\phaser03\assets\coin.mp3" />
+    <Content Include="public\phaser03\assets\coin.png" />
+    <Content Include="public\phaser03\assets\dead.mp3" />
+    <Content Include="public\phaser03\assets\enemy.png" />
+    <Content Include="public\phaser03\assets\jump.mp3" />
+    <Content Include="public\phaser03\assets\player.png" />
+    <Content Include="public\phaser03\assets\player2.png" />
+    <Content Include="public\phaser03\assets\progressBar.png" />
+    <Content Include="public\phaser03\assets\wallHorizontal.png" />
+    <Content Include="public\phaser03\assets\wallVertical.png" />
+    <Content Include="public\phaser03\index.html" />
+    <Content Include="README.md" />
+    <Content Include="views\jogo-detalhe.ejs" />
+    <Content Include="views\novo.ejs" />
+    <Content Include="views\principal.ejs" />
+    <Content Include="views\jogos.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+    <Folder Include="public\pegamoeda\" />
+    <Folder Include="public\pegamoeda\assets\" />
+    <Folder Include="public\pegamoeda\js\" />
+    <Folder Include="public\phaser03\" />
+    <Folder Include="public\phaser03\assets\" />
+    <Folder Include="public\phaser03\js\" />
+    <Folder Include="typings\globals\mongodb\" />
+    <Folder Include="views\" />
+    <Folder Include="public\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\ejs\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\ejs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mongodb\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
